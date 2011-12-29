@@ -22,7 +22,7 @@ module RenRen
     end
     
     def self.access_token
-      @@api_secret
+      @@access_token
     end    
 
   end

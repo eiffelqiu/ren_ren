@@ -1,5 +1,6 @@
 require 'ren_ren/config'
 require 'ren_ren/base'
+require 'yaml'
 
 if File.exists?('config/config.yml')
   config = YAML.load_file('config/config.yml')
