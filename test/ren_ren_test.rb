@@ -15,6 +15,5 @@ context "ren_ren" do
   context "feed info" do
     asserts("user info is not null") { !topic.api().empty? }
     asserts("feed info is not null") { !topic.api({:method => "feed.get", :uid => topic.api()[0]['uid']}).empty? }
-    asserts("user's name")
   end  
 end
