@@ -1,29 +1,9 @@
 module RenRen
   module Config
     
-    def self.api_key=(val)
-      @@api_key = val
+    class << self
+      attr_accessor :api_key, :api_secret, :access_token 
     end
-    
-    def self.api_key
-      @@api_key
-    end
-    
-    def self.api_secret=(val)
-      @@api_secret = val
-    end
-    
-    def self.api_secret
-      @@api_secret
-    end
-    
-    def self.access_token=(val)
-      @@access_token = val
-    end
-    
-    def self.access_token
-      @@access_token
-    end    
 
   end
 end

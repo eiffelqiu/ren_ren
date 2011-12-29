@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.summary = %Q{renren api ruby gem}
   gem.description = %Q{renren api ruby gem}
   gem.email = "eiffelqiu@gmail.com"
-  gem.authors = ["Eiffel Q"]
+  gem.authors = ["Eiffel Qiu"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
