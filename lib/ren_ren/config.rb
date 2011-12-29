@@ -16,6 +16,14 @@ module RenRen
     def self.api_secret
       @@api_secret
     end
+    
+    def self.access_token=(val)
+      @@access_token = val
+    end
+    
+    def self.access_token
+      @@api_secret
+    end    
 
   end
 end

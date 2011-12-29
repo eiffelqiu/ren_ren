@@ -2,10 +2,10 @@ require 'teststrap'
 
 context "ren_ren" do
   setup do
-    false
+    RenRen::Base.new(RenRen::Config.access_token)
   end
 
-  # asserts "i'm a failure :(" do
-  #   topic
-  # end
+  context "get user info" do
+    asserts("user info is not null") { !topic.api().empty? }
+  end
 end
