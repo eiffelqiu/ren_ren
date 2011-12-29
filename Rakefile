@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "ren_ren"
   gem.homepage = "http://github.com/eiffelqiu/ren_ren"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{renren api ruby gem}
+  gem.description = %Q{renren api ruby gem}
   gem.email = "eiffelqiu@gmail.com"
   gem.authors = ["Eiffel Q"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
@@ -42,7 +42,8 @@ end
 
 task :default => :test
 
-require 'rake/rdoctask'
+# require 'rake/rdoctask'
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 

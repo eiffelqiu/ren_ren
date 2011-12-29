@@ -1,6 +1,6 @@
 = ren_ren
 
-Description goes here.
+A third party, non-official renren API gem created by Eiffel Qiu
 
 == Contributing to ren_ren
  

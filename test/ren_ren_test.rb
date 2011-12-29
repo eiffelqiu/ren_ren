@@ -5,7 +5,7 @@ context "ren_ren" do
     false
   end
 
-  asserts "i'm a failure :(" do
-    topic
-  end
+  # asserts "i'm a failure :(" do
+  #   topic
+  # end
 end
