@@ -2,15 +2,15 @@
 
 A third party, non-official renren API gem created by Eiffel Qiu
 
-== Contributing to ren_ren
- 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+To install the gem simply enter:
+
+  gem install ren_ren
+
+This is a minimalistic API implementation, where all function calls goes through a single method. For example to publish a feed item one might do the following:
+
+  RenRen::Config.access_token = "XXXX"
+  renren = RenRen::Base.new(RenRen::Config.access_token)
+  renren.api({:method, "users.getInfo"})
 
 == Copyright
 
