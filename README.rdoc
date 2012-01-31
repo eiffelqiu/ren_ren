@@ -11,9 +11,9 @@ This is a minimalistic API implementation, where all function calls goes through
   require "rubygems"
   require 'ren_ren'
 
-  RenRen::Config.access_token = "158581|6.4c733a9bd87c7420c48fb92fceb27615.2592000.1330596000-433516336"
-  RenRen::Config.api_key = "1cd9fe46f45046c58b1e1393a340b167"
-  RenRen::Config.api_secret = "369c07af41a8487cb2127bf97044c839"
+  RenRen::Config.access_token = "XXXX"
+  RenRen::Config.api_key = "YYYY"
+  RenRen::Config.api_secret = "ZZZZ"
   renren = RenRen::Base.new(RenRen::Config.access_token)
   puts renren.api({:method => "users.getInfo"})  
 
