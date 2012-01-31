@@ -12,7 +12,6 @@ This is a minimalistic API implementation, where all function calls goes through
   require 'ren_ren'
 
   RenRen::Config.access_token = "XXXX"
-  RenRen::Config.api_key = "YYYY"
   RenRen::Config.api_secret = "ZZZZ"
   renren = RenRen::Base.new(RenRen::Config.access_token)
   puts renren.api({:method => "users.getInfo"})  
