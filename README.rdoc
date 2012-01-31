@@ -8,9 +8,14 @@ To install the gem simply enter:
 
 This is a minimalistic API implementation, where all function calls goes through a single method. For example to publish a feed item one might do the following:
 
-  RenRen::Config.access_token = "XXXX"
+  require "rubygems"
+  require 'ren_ren'
+
+  RenRen::Config.access_token = "xxxx"
+  RenRen::Config.api_key = "yyyy"
+  RenRen::Config.api_secret = "zzzz"
   renren = RenRen::Base.new(RenRen::Config.access_token)
-  renren.api({:method, "users.getInfo"})
+  puts renren.api({:method => "quota.get"})
 
 == Copyright
 
